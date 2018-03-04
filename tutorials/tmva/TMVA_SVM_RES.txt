@@ -1,0 +1,184 @@
+
+Processing TMVAClassification.C("SVM")...
+
+==> Start TMVAClassification
+--- TMVAClassification       : Using input file: ./tmva_class_example.root
+DataSetInfo              : [dataset] : Added class "Signal"
+                         : Add Tree TreeS of type Signal with 6000 events
+DataSetInfo              : [dataset] : Added class "Background"
+                         : Add Tree TreeB of type Background with 6000 events
+Factory                  : Booking method: [1mSVM[0m
+                         : 
+SVM                      : [dataset] : Create Transformation "Norm" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'myvar1' <---> Output : variable 'myvar1'
+                         : Input : variable 'myvar2' <---> Output : variable 'myvar2'
+                         : Input : variable 'var3' <---> Output : variable 'var3'
+                         : Input : variable 'var4' <---> Output : variable 'var4'
+Factory                  : [1mTrain all methods[0m
+DataSetFactory           : [dataset] : Number of events in input trees
+                         : 
+                         : 
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 3000
+                         : Signal     -- testing events             : 3000
+                         : Signal     -- training and testing events: 6000
+                         : Background -- training events            : 3000
+                         : Background -- testing events             : 3000
+                         : Background -- training and testing events: 6000
+                         : 
+Factory                  : [dataset] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'myvar1' <---> Output : variable 'myvar1'
+                         : Input : variable 'myvar2' <---> Output : variable 'myvar2'
+                         : Input : variable 'var3' <---> Output : variable 'var3'
+                         : Input : variable 'var4' <---> Output : variable 'var4'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'myvar1' <---> Output : variable 'myvar1'
+                         : Input : variable 'myvar2' <---> Output : variable 'myvar2'
+                         : Input : variable 'var3' <---> Output : variable 'var3'
+                         : Input : variable 'var4' <---> Output : variable 'var4'
+Factory                  : [dataset] : Create Transformation "P" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'myvar1' <---> Output : variable 'myvar1'
+                         : Input : variable 'myvar2' <---> Output : variable 'myvar2'
+                         : Input : variable 'var3' <---> Output : variable 'var3'
+                         : Input : variable 'var4' <---> Output : variable 'var4'
+Factory                  : [dataset] : Create Transformation "G" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'myvar1' <---> Output : variable 'myvar1'
+                         : Input : variable 'myvar2' <---> Output : variable 'myvar2'
+                         : Input : variable 'var3' <---> Output : variable 'var3'
+                         : Input : variable 'var4' <---> Output : variable 'var4'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'myvar1' <---> Output : variable 'myvar1'
+                         : Input : variable 'myvar2' <---> Output : variable 'myvar2'
+                         : Input : variable 'var3' <---> Output : variable 'var3'
+                         : Input : variable 'var4' <---> Output : variable 'var4'
+TFHandler_Factory        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :   myvar1:  -0.019695     1.7426   [    -8.9660     7.6931 ]
+                         :   myvar2: -0.0099359     1.1060   [    -4.0854     4.0259 ]
+                         :     var3: -0.0086787     1.0724   [    -5.0508     4.3597 ]
+                         :     var4:    0.13610     1.2670   [    -5.9505     4.9225 ]
+                         : -----------------------------------------------------------
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :   myvar1:   -0.13104     1.0000   [    -5.5166     4.6699 ]
+                         :   myvar2:  -0.031386     1.0000   [    -3.7231     3.6753 ]
+                         :     var3:   -0.11585     1.0000   [    -4.1743     4.2780 ]
+                         :     var4:    0.31601     1.0000   [    -4.0237     3.3303 ]
+                         : -----------------------------------------------------------
+                         : Preparing the Principle Component (PCA) transformation...
+TFHandler_Factory        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :   myvar1:   -0.10837     2.3058   [    -11.388     9.4689 ]
+                         :   myvar2:   0.015668     1.1166   [    -4.0361     4.0142 ]
+                         :     var3:  0.0031440    0.57856   [    -2.0238     2.1996 ]
+                         :     var4: -0.0013617    0.34147   [    -1.1410     1.0899 ]
+                         : -----------------------------------------------------------
+                         : Preparing the Gaussian transformation...
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :   myvar1: -0.0064995     1.0000   [    -3.5905     8.0247 ]
+                         :   myvar2: -0.0057211     1.0000   [    -4.0462     5.8085 ]
+                         :     var3:   0.011537     1.0000   [    -3.4577     7.6410 ]
+                         :     var4:   0.019641     1.0000   [    -4.2330     7.6345 ]
+                         : -----------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : -------------------------------------
+                         : Rank : Variable     : Separation
+                         : -------------------------------------
+                         :    1 : Variable 4   : 2.624e-01
+                         :    2 : Variable 3   : 1.340e-01
+                         :    3 : myvar1       : 8.486e-02
+                         :    4 : Expression 2 : 1.372e-02
+                         : -------------------------------------
+Factory                  : Train method: SVM for Classification
+                         : 
+TFHandler_SVM            : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :   myvar1:   0.074047    0.20920   [    -1.0000     1.0000 ]
+                         :   myvar2:  0.0048863    0.27269   [    -1.0000     1.0000 ]
+                         :     var3:   0.071597    0.22792   [    -1.0000     1.0000 ]
+                         :     var4:    0.11958    0.23305   [    -1.0000     1.0000 ]
+                         : -----------------------------------------------------------
+                         : Building SVM Working Set...with 6000 event instances
+                         : Elapsed time for Working Set build: [1;31m0.985 sec[0m
+                         : Sorry, no computing time forecast available for SVM, please wait ...
+                         : Elapsed time: [1;31m12.3 sec[0m                                          
+                         : Elapsed time for training with 6000 events: [1;31m13.3 sec[0m         
+SVM                      : [dataset] : Evaluation of SVM on training sample (6000 events)
+                         : Elapsed time for evaluation of 6000 events: [1;31m1 sec[0m       
+                         : Creating xml weight file: [0;36mdataset/weights/TMVAClassification_SVM.weights.xml[0m
+                         : Creating standalone class: [0;36mdataset/weights/TMVAClassification_SVM.class.C[0m
+Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+                         : No variable ranking supplied by classifier: SVM
+Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+Factory                  : [1mTest all methods[0m
+Factory                  : Test method: SVM for Classification performance
+                         : 
+SVM                      : [dataset] : Evaluation of SVM on testing sample (6000 events)
+                         : Elapsed time for evaluation of 6000 events: [1;31m0.599 sec[0m       
+Factory                  : [1mEvaluate all methods[0m
+Factory                  : Evaluate classifier: SVM
+                         : 
+TFHandler_SVM            : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :   myvar1:    0.10104    0.20562   [    -1.1074     1.0251 ]
+                         :   myvar2: -0.0057691    0.27236   [   -0.90663     1.0008 ]
+                         :     var3:    0.10695    0.22383   [    -1.0649     1.0602 ]
+                         :     var4:    0.17365    0.22421   [    -1.1871     1.0199 ]
+                         : -----------------------------------------------------------
+SVM                      : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+TFHandler_SVM            : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :   myvar1:    0.10104    0.20562   [    -1.1074     1.0251 ]
+                         :   myvar2: -0.0057691    0.27236   [   -0.90663     1.0008 ]
+                         :     var3:    0.10695    0.22383   [    -1.0649     1.0602 ]
+                         :     var4:    0.17365    0.22421   [    -1.1871     1.0199 ]
+                         : -----------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : dataset       SVM            : 0.923
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : dataset              SVM            : 0.353 (0.378)       0.773 (0.755)      0.935 (0.930)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+Dataset:dataset          : Created tree 'TestTree' with 6000 events
+                         : 
+Dataset:dataset          : Created tree 'TrainTree' with 6000 events
+                         : 
+Factory                  : [1mThank you for using TMVA![0m
+                         : [1mFor citation information, please visit: http://tmva.sf.net/citeTMVA.html[0m
+==> Wrote root file: TMVA.root
+==> TMVAClassification is done!
+--- Launch TMVA GUI to view input file: TMVA.root
+=== Note: inactive buttons indicate classifiers that were not trained, ===
+===       or functionalities that were not invoked during the training ===
+(int) 0
